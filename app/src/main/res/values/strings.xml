@@ -20,4 +20,9 @@
     <string name="LargeValue">$1.75</string>
     <string name="OrderButtonText">PLACE ORDER</string>
     <string name="resetButton">START NEW ORDER</string>
+
+    <string name="summaryLine1">Order Total $</string>
+    <string name="summaryLine2">\n\nItems Ordered:</string>
+    <string name="summaryLine3">\nSubtotal: $</string>
+    <string name="summaryLine4">\nTax(8%):  $</string>
 </resources>

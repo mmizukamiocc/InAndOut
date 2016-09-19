@@ -12,7 +12,10 @@ public class Order {
     private int mSmallDrink;
     private int mMediumDrink;
     private int mLargeDrink;
+    private int mTotalItems;
     private double mSubtotal;
+    private double mTotal;
+    private double mTax;
     private double TAX_RATE = 0.08;
 
 
@@ -29,26 +32,36 @@ public class Order {
     }
 
 
-    public double calculateSubtotal()
+    public void calculateSubtotal()
     {
-        mSubtotal = (mCheeseburger * 3.60) + (mCheeseburger * 2.15) + (mFrenchFries * 1.65) +
-                (mShakes *2.20) + (mSmallDrink + 1.45) + (mMediumDrink + 1.55) + (mLargeDrink * 1.75);
-
-        return mSubtotal;
-    }
-
-    public double calculateTaxAmount()
-    {
-        return (mSubtotal * TAX_RATE);
-    }
-
-    public double calculateTotalAmount()
-    {
-        return mSubtotal + calculateTaxAmount();
+        mSubtotal = (mDoubleDouble * 3.60) + (mCheeseburger * 2.15) + (mFrenchFries * 1.65) +
+                (mShakes *2.20) + (mSmallDrink * 1.45) + (mMediumDrink * 1.55) + (mLargeDrink * 1.75);
 
     }
 
+    public void calculateTaxAmount()
+    {
+        mTax = (mSubtotal * TAX_RATE);
+    }
 
+    public void calculateTotalAmount()
+    {
+        mTotal = mSubtotal + mTax;
+
+    }
+    public void calculateTotalItems()
+    {
+        mTotalItems=  mDoubleDouble + mCheeseburger + mFrenchFries +
+                mShakes + mSmallDrink + mMediumDrink + mLargeDrink;
+    }
+
+    public void recalculate()
+    {
+        calculateSubtotal();
+        calculateTaxAmount();
+        calculateTotalAmount();
+        calculateTotalItems();
+    }
 
     public int getDoubleDouble() {
         return mDoubleDouble;
@@ -112,5 +125,29 @@ public class Order {
 
     public void setLargeDrink(int mLargeDrink) {
         this.mLargeDrink = mLargeDrink;
+    }
+
+    public void setSubtotal(double mSubtotal) {
+        this.mSubtotal = mSubtotal;
+    }
+
+    public double getTotal() {
+        return mTotal;
+    }
+
+    public void setTotal(double mTotal) {
+        this.mTotal = mTotal;
+    }
+
+    public double getTax() {
+        return mTax;
+    }
+
+    public void setTax(double mTax) {
+        this.mTax = mTax;
+    }
+
+    public int getTotalItems() {
+        return mTotalItems;
     }
 }
