@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">In And Out</string>
+    <string name="orderText">Place an Order</string>
+    <string name="emptyText" />
+    <string name="dollar_sign">$</string>
+    <string name="DoubleDouble">Double Double</string>
+    <string name="Cheeseburger">Cheeseburger</string>
+    <string name="FrenchFries">French Fries</string>
+    <string name="Shakes">Shakes</string>
+    <string name="FountainDrinks">Fountain Drinks(pick size)</string>
+    <string name="Small">Small</string>
+    <string name="Medium">Medium</string>
+    <string name="Large">Large</string>
+    <string name="DoubleDoubleValue">$3.60</string>
+    <string name="CheeseburgerValue">$2.15</string>
+    <string name="FrenchFriesValue">$1.65</string>
+    <string name="ShakesValue">$2.20</string>
+    <string name="SmallValue">$1.45</string>
+    <string name="MediumValue">$1.55</string>
+    <string name="LargeValue">$1.75</string>
+    <string name="OrderButtonText">PLACE ORDER</string>
+    <string name="resetButton">START NEW ORDER</string>
+</resources>
