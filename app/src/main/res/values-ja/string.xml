@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <resources>
+        <string name="app_name">In And Out</string>
+        <string name="orderText">注文を入力してください</string>
+        <string name="emptyText" />
+        <string name="dollar_sign">$</string>
+        <string name="DoubleDouble">ダブルダブル</string>
+        <string name="Cheeseburger">チーズバーガー</string>
+        <string name="FrenchFries">フレンチフライ</string>
+        <string name="Shakes">シェイク</string>
+        <string name="FountainDrinks">ソフトドリンク(サイズ毎)</string>
+        <string name="Small">小</string>
+        <string name="Medium">中</string>
+        <string name="Large">大</string>
+        <string name="DoubleDoubleValue">$3.60</string>
+        <string name="CheeseburgerValue">$2.15</string>
+        <string name="FrenchFriesValue">$1.65</string>
+        <string name="ShakesValue">$2.20</string>
+        <string name="SmallValue">$1.45</string>
+        <string name="MediumValue">$1.55</string>
+        <string name="LargeValue">$1.75</string>
+        <string name="OrderButtonText">注文する</string>
+        <string name="resetButton">注文へ戻る</string>
+
+        <string name="summaryLine1">合計 $</string>
+        <string name="summaryLine2">\n\n注文品数:</string>
+        <string name="summaryLine3">\n小計: $</string>
+        <string name="summaryLine4">\n税(8%):  $</string>
+    </resources>
+
+
+</resources>
